@@ -1,2 +1,5 @@
-# Comandos-LAMP-Ubuntu
-lista de comandos usados para instalar PHP, MySQL e Apache no Ubunutu 16.04
+# Conigurações Básicas do Linux
+
+Repositório de comandos Básicos par ser usar no Ubuntu
+
+--Instalação do LAMP 

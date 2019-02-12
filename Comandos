@@ -1,0 +1,23 @@
+#instalação do apache
+sudo apt-get update
+sudo apt-get install apache2
+
+#instalação do MySQL
+sudo apt-get install mysql-server
+
+--script de segurança do mysql
+sudo mysql_secure_installation
+
+#instalação do PHP
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-mysql
+
+-----conf. adicional
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+resertar o apache --
+sudo systemctl restart apache2
+
+Criar arquivo de teste do PHP
+sudo nano /var/www/html/info.php

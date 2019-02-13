@@ -1,4 +1,4 @@
-# Conigurações Básicas do Linux
+Configurações 
 
 Repositório de comandos Básicos par ser usar no Ubuntu
 

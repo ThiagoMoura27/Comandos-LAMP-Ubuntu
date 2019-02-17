@@ -21,3 +21,11 @@ sudo systemctl restart apache2
 
 Criar arquivo de teste do PHP
 sudo nano /var/www/html/info.php
+
+#Instalando o o editor Fritzing
+Usado para criar circuitos 
+
+sudo add-apt-repository ppa:ehbello/fritzing
+sudo apt-get update
+sudo apt-get install fritzing
+

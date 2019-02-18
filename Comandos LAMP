@@ -29,3 +29,6 @@ sudo add-apt-repository ppa:ehbello/fritzing
 sudo apt-get update
 sudo apt-get install fritzing
 
+#instalação do Arduino IDE
+$ sudo apt-get update
+$ sudo apt-get install arduino

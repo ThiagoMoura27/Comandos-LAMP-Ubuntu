@@ -32,3 +32,17 @@ sudo apt-get install fritzing
 #instalação do Arduino IDE
 $ sudo apt-get update
 $ sudo apt-get install arduino
+
+#temas para o Ubuntu com a ferramenta Gnome Tweak Tool 
+--instalação dos repositorios:
+sudo add-apt-repository ppa:ricotz/testing
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo apt-get update
+sudo apt-get install gnome-tweak-tool
+
+
+
+
+
+

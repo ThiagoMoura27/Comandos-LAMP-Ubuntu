@@ -1,27 +1,35 @@
+------APACHE ------------------------------------------------------------
 #instalação do apache
 sudo apt-get update
 sudo apt-get install apache2
 
+-----Uso da "URL amigável" no apache.
+sudo nano /etc/apache2/apache2.conf
+Em: <Directory /var/www/> altere o AllowOverride None para AllowOverride All
+Reinicializar o servidor Apache.
+sudo /etc/init.d/apache2 restart
+
+-----conf. adicional
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+------MYSQL------------------------------------------------------------------
 #instalação do MySQL
 sudo apt-get install mysql-server
 
 --script de segurança do mysql
 sudo mysql_secure_installation
 
+------PHP---------------------------------------------------------------------
+
 #instalação do PHP
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-mysql
 
------conf. adicional
-sudo nano /etc/apache2/mods-enabled/dir.conf
-
-resertar o apache --
-sudo systemctl restart apache2
-
 Criar arquivo de teste do PHP
 sudo nano /var/www/html/info.php
 
+------Fritzing----------------------------------------------------------------
 #Instalando o o editor Fritzing
 Usado para criar circuitos 
 
@@ -29,6 +37,7 @@ sudo add-apt-repository ppa:ehbello/fritzing
 sudo apt-get update
 sudo apt-get install fritzing
 
+------ARDUINO------------------------------------------------------------------
 #instalação do Arduino IDE
 $ sudo apt-get update
 $ sudo apt-get install arduino
@@ -41,10 +50,12 @@ sudo add-apt-repository ppa:gnome3-team/gnome3
 sudo apt-get update
 sudo apt-get install gnome-tweak-tool
 
-#isntalação do Sublime Text
+------EDITORES------------------------------------------------------------------
+#instalação do Sublime Text
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update 
 && sudo apt-get install sublime-text-installer
 
+------EXTRAS---------------------------------------------------------------------
 #instalação do pip - python
 para o Python 2
 sudo apt install python-pip

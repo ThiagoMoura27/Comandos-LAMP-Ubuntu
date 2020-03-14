@@ -13,11 +13,16 @@ sudo /etc/init.d/apache2 restart
 sudo nano /etc/apache2/mods-enabled/dir.conf
 
 ------MYSQL------------------------------------------------------------------
-#instalação do MySQL
-sudo apt-get install mysql-server
+https://www.youtube.com/watch?v=VHKmD41jzEk&list=FLr3N6WqBnxsf2YwudGgW7oA&index=9&t=0s
 
---script de segurança do mysql
+Comandos:
+sudo apt install mysql-server
 sudo mysql_secure_installation
+Edite mysqld.cnf e mude bind-address para 0.0.0.0 com o comando:
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo service mysql restart
+sudo mysql -u root
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SuaSenha';
 
 ------PHP---------------------------------------------------------------------
 

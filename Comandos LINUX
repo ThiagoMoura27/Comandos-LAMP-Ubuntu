@@ -73,6 +73,11 @@ sudo apt install python3-pip
 #aiml python
 pip install python-aiml
 
+#shortcut
+sudo add-apt-repository ppa:haraldhv/shotcut
+sudo apt-get update
+sudo apt-get install shotcut
+
 
 
 

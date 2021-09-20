@@ -53,7 +53,22 @@ sudo add-apt-repository ppa:ricotz/testing
 sudo add-apt-repository ppa:gnome3-team/gnome3-staging
 sudo add-apt-repository ppa:gnome3-team/gnome3
 sudo apt-get update
-sudo apt-get install gnome-tweak-tool
+sudo apt-get install gnome-tweak-
+
+Opção 1
+Adicione o usuário ao grupo que tem permissão sobre as portas.
+O tty é o grupo das portas
+$ adduser NOME_USUARIO tty
+Opção 2
+Caso não funcione tente algo mais severo, libera permissão geral a porta
+chmod 777 /dev/ttyACM0
+Opção 3
+Tente criar o atalho ( link simbólico )
+ln -s /dev/ttyACM0 /dev/ttyUSB1
+
+Se nada funcionar, execute como root.
+Se nem como root funcionar ai é problema nos arquivos que você baixou.
+   
 
 ------EDITORES------------------------------------------------------------------
 #instalação do Sublime Text

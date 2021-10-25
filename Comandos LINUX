@@ -96,7 +96,19 @@ sudo apt-get install shotcut
 #Wireshark
 sudo apt-get install wireshark
 
+---VIRTUALENV ---------------------------------------------------------------------------
+maquinas virtuais
+--sudo pip install virtualenv
 
+Criando uma nova virtualenv
+--virtualenv nome_da_virtualenv
+ex: virtualenv labdjango
+
+Ativando a virtualenv
+--source nome_da_virtualenv/bin/activate
+
+Para desativar uma virtualenv
+-- (projeto) nome_da_pasta deactivate
 
 
 

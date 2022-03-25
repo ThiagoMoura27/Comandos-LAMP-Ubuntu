@@ -1,0 +1,46 @@
+Docker images
+
+Nós utilizamos ele para listarmos as imagens que nós temos no nosso host
+$docker images
+-----------------------------------------------------------------------------------
+Docker pull
+
+Quando encontrarmos a imagem que precisamos para a nossa aplicação
+docker pull (parametro)
+-------------------------------------------------------------------------------------
+Docker ps
+
+Agora vamos verificar o status do nosso contêiner
+docker ps 
+-------------------------------------------------------------------------------------
+docker ps -a
+
+Docker inspect
+
+Caso você precise de mais detalhes sobre a sua imagem ou o seu contêiner
+docker inspect (id da imagem ou container)
+
+-------------------------------------------------------------------------------------
+
+Docker rmi
+
+Caso você tenha baixado uma imagem errada ou queira deletar alguma por um outro motivo, basta executar o comando a cima que ele deleta ela do seu host.
+docker rmi (nome da imagem)
+
+
+
+--------------------------------------
+Inicializar e parar o MySQL com o Docker
+
+Sempre que precisar iniciar o MySQL que você acabou de instalar use o comando:
+
+docker start nome-do-container
+
+E para parar:
+
+docker stop nome-do-container
+
+
+
+
+

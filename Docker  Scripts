@@ -13,21 +13,23 @@ sudo systemctl status docker
 sudo usermod -aG docker ${USER}
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt
+--------------------------------------------------------------------------------------------------------
+#MYSQL
+$docker pull mysql:5.7 --usado para baixa o container do mysql para versão 5.7
+roda e criar o container
+$docker run mysql:5.7 --rodar a aplicação
+- *é necessário modificar a variavel de ambiente MYSQL_ROOT_PASSWORD
+$sudo docker run -e MYSQL_ROOT_PASSWORD=root mysql:5.7
+- e --vária para modificação de variavel
 
------------------------------------------------------------------------
 
-
+--------------------------------------------------------------------------------------------------
 docker pull ubuntu/postgres ---repositório do postgreSQL
-
 https://hub.docker.com/r/ubuntu/postgres
-
 tutorial
 https://felixgilioli.medium.com/como-rodar-um-banco-de-dados-postgres-com-docker-6aecf67995e1
 
-
-
-
-
+----------------------------------------------------------------------------------------------------
 #criar um container docker
 docker volume create portainer_data
 

@@ -1,0 +1,4 @@
+#instalar o LAMP 
+
+sudo apt install tasksel
+sudo tasksel install lamp-server

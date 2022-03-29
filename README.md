@@ -1,7 +1,7 @@
-Configurações 
+Repositório de comandos básicos de instalação de Ferramentas 
 
-Repositório de comandos Básicos par ser usar no Ubuntu
+-Banco de Dados ( Mysql e Postgre )
+-Docker
+-Ferramentas do Linux
+-Desenvolvimento WEB
 
---Instalação do LAMP 
---Fritzing
---Arduino

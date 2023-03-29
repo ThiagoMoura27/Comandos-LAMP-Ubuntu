@@ -1,0 +1,18 @@
+ sudo apt-get install git
+
+git config --global user.name "usuario"
+git config --global user.email "usuario@email"
+
+git init 
+ 
+git config --global init.defaultBranch main
+ 
+git status
+
+#adicionar todos os arquivos
+git add .
+
+git commit 
+git status
+git log
+
